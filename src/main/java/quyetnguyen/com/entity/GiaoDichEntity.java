@@ -16,7 +16,6 @@ public class GiaoDichEntity {
     private int maKhuyenMai;
     @Column(name = "sotiengiaodichthucte")
     private String soTienGiaoDichThucTe;
-
     public GiaoDichEntity() {
     }
 

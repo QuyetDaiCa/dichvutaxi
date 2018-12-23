@@ -13,7 +13,6 @@ public class ChuXeConvert {
         chuXePojo.setDiaChi(chuXeEntity.getDiaChi());
         chuXePojo.setSoDT(chuXeEntity.getSoDT());
         chuXePojo.setBienSoXe(chuXeEntity.getBienSoXe());
-        chuXePojo.setMaLoaiXe(chuXeEntity.getMaLoaiXe());
         chuXePojo.setMaHTX(chuXeEntity.getMaHTX());
         return chuXePojo;
     }

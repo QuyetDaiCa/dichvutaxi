@@ -1,6 +1,8 @@
 package quyetnguyen.com.entity;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table
@@ -17,20 +19,28 @@ public class ChuXeEntity {
     private String soDT;
     @Column(name = "biensoxe")
     private String bienSoXe;
-    @Column(name = "maloaixe")
-    private int maLoaiXe;
     @Column(name = "mahtx")
     private int maHTX;
+    @ManyToOne
+    @JoinColumn(name = "maloaixe")
+    private LoaiXeEntity loaiXeEntity;
+
+    public LoaiXeEntity getLoaiXeEntity() {
+        return loaiXeEntity;
+    }
+
+    public void setLoaiXeEntity(LoaiXeEntity loaiXeEntity) {
+        this.loaiXeEntity = loaiXeEntity;
+    }
 
     public ChuXeEntity() {
     }
 
-    public ChuXeEntity(String hoTenChuXe, String diaChi, String soDT, String bienSoXe, int maLoaiXe, int maHTX) {
+    public ChuXeEntity(String hoTenChuXe, String diaChi, String soDT, String bienSoXe, int maHTX) {
         this.hoTenChuXe = hoTenChuXe;
         this.diaChi = diaChi;
         this.soDT = soDT;
         this.bienSoXe = bienSoXe;
-        this.maLoaiXe = maLoaiXe;
         this.maHTX = maHTX;
     }
 
@@ -72,14 +82,6 @@ public class ChuXeEntity {
 
     public void setBienSoXe(String bienSoXe) {
         this.bienSoXe = bienSoXe;
-    }
-
-    public int getMaLoaiXe() {
-        return maLoaiXe;
-    }
-
-    public void setMaLoaiXe(int maLoaiXe) {
-        this.maLoaiXe = maLoaiXe;
     }
 
     public int getMaHTX() {

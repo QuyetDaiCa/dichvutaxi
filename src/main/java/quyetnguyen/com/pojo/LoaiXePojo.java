@@ -1,22 +1,22 @@
 package quyetnguyen.com.pojo;
 
 public class LoaiXePojo {
-    private Long maLoaiXe;
+    private Integer maLoaiXe;
     private String moTaLoaiXe;
 
     public LoaiXePojo() {
     }
 
-    public LoaiXePojo(Long maLoaiXe, String moTaLoaiXe) {
+    public LoaiXePojo(Integer maLoaiXe, String moTaLoaiXe) {
         this.maLoaiXe = maLoaiXe;
         this.moTaLoaiXe = moTaLoaiXe;
     }
 
-    public Long getMaLoaiXe() {
+    public Integer getMaLoaiXe() {
         return maLoaiXe;
     }
 
-    public void setMaLoaiXe(Long maLoaiXe) {
+    public void setMaLoaiXe(Integer maLoaiXe) {
         this.maLoaiXe = maLoaiXe;
     }
 
