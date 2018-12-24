@@ -1,22 +1,22 @@
 package quyetnguyen.com.pojo;
 
 public class KhuyenMaiPojo {
-    private int maKhuyenMai;
+    private Integer maKhuyenMai;
     private String noiDungKhuyenMai;
 
     public KhuyenMaiPojo() {
     }
 
-    public KhuyenMaiPojo(int maKhuyenMai, String noiDungKhuyenMai) {
+    public KhuyenMaiPojo(Integer maKhuyenMai, String noiDungKhuyenMai) {
         this.maKhuyenMai = maKhuyenMai;
         this.noiDungKhuyenMai = noiDungKhuyenMai;
     }
 
-    public int getMaKhuyenMai() {
+    public Integer getMaKhuyenMai() {
         return maKhuyenMai;
     }
 
-    public void setMaKhuyenMai(int maKhuyenMai) {
+    public void setMaKhuyenMai(Integer maKhuyenMai) {
         this.maKhuyenMai = maKhuyenMai;
     }
 

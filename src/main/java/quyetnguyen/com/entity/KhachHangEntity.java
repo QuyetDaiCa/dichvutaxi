@@ -3,12 +3,12 @@ package quyetnguyen.com.entity;
 import javax.persistence.*;
 
 @Entity
-@Table
+@Table(name = "khachhang")
 public class KhachHangEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "makhachhang")
-    private int maKhachHang;
+    private Integer maKhachHang;
     @Column(name = "hotenkh")
     private String hoTenKH;
     @Column(name = "sodt")
@@ -22,11 +22,11 @@ public class KhachHangEntity {
         this.soDT = soDT;
     }
 
-    public int getMaKhachHang() {
+    public Integer getMaKhachHang() {
         return maKhachHang;
     }
 
-    public void setMaKhachHang(int maKhachHang) {
+    public void setMaKhachHang(Integer maKhachHang) {
         this.maKhachHang = maKhachHang;
     }
 

@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table
+@Table(name = "giaodich")
 public class GiaoDichEntity {
     @EmbeddedId
     private Pk pk;
@@ -13,13 +13,13 @@ public class GiaoDichEntity {
     @Column(name = "diemtrakhach")
     private String diemTraKhach;
     @Column(name = "makhuyenmai")
-    private int maKhuyenMai;
+    private Integer maKhuyenMai;
     @Column(name = "sotiengiaodichthucte")
     private String soTienGiaoDichThucTe;
     public GiaoDichEntity() {
     }
 
-    public GiaoDichEntity(Pk pk, String diemDonKhach, String diemTraKhach, int maKhuyenMai, String soTienGiaoDichThucTe) {
+    public GiaoDichEntity(Pk pk, String diemDonKhach, String diemTraKhach, Integer maKhuyenMai, String soTienGiaoDichThucTe) {
         this.pk = pk;
         this.diemDonKhach = diemDonKhach;
         this.diemTraKhach = diemTraKhach;
@@ -51,11 +51,11 @@ public class GiaoDichEntity {
         this.diemTraKhach = diemTraKhach;
     }
 
-    public int getMaKhuyenMai() {
+    public Integer getMaKhuyenMai() {
         return maKhuyenMai;
     }
 
-    public void setMaKhuyenMai(int maKhuyenMai) {
+    public void setMaKhuyenMai(Integer maKhuyenMai) {
         this.maKhuyenMai = maKhuyenMai;
     }
 
@@ -70,31 +70,31 @@ public class GiaoDichEntity {
     @Embeddable
     public static class Pk implements Serializable{
         @Column(name = "machuxe")
-        private int maChuXe;
+        private Integer maChuXe;
         @Column(name = "makhachhang")
-        private int maKhachHang;
+        private Integer maKhachHang;
         @Column(name = "thoigiangiaodich")
         private String thoiGianGiaoDich;
 
-        public Pk(int maChuXe, int maKhachHang, String thoiGianGiaoDich) {
+        public Pk(Integer maChuXe, Integer maKhachHang, String thoiGianGiaoDich) {
             this.maChuXe = maChuXe;
             this.maKhachHang = maKhachHang;
             this.thoiGianGiaoDich = thoiGianGiaoDich;
         }
 
-        public int getMaChuXe() {
+        public Integer getMaChuXe() {
             return maChuXe;
         }
 
-        public void setMaChuXe(int maChuXe) {
+        public void setMaChuXe(Integer maChuXe) {
             this.maChuXe = maChuXe;
         }
 
-        public int getMaKhachHang() {
+        public Integer getMaKhachHang() {
             return maKhachHang;
         }
 
-        public void setMaKhachHang(int maKhachHang) {
+        public void setMaKhachHang(Integer maKhachHang) {
             this.maKhachHang = maKhachHang;
         }
 

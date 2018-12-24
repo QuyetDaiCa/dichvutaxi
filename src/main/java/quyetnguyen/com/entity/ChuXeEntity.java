@@ -5,12 +5,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table
+@Table(name = "chuxe")
 public class ChuXeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "machuxe")
-    private int maChuXe;
+    private Integer maChuXe;
     @Column(name = "hotenchuxe")
     private String hoTenChuXe;
     @Column(name = "diachi")
@@ -20,23 +20,33 @@ public class ChuXeEntity {
     @Column(name = "biensoxe")
     private String bienSoXe;
     @Column(name = "mahtx")
-    private int maHTX;
-    @ManyToOne
-    @JoinColumn(name = "maloaixe")
-    private LoaiXeEntity loaiXeEntity;
+    private Integer maHTX;
+    @Column(name = "maloaixe")
+    private Integer maloaixe;
 
-    public LoaiXeEntity getLoaiXeEntity() {
-        return loaiXeEntity;
+    public Integer getMaloaixe() {
+        return maloaixe;
     }
 
-    public void setLoaiXeEntity(LoaiXeEntity loaiXeEntity) {
-        this.loaiXeEntity = loaiXeEntity;
+    public void setMaloaixe(Integer maloaixe) {
+        this.maloaixe = maloaixe;
     }
+    //  @ManyToOne
+    //@JoinColumn(name = "maloaixe")
+  //  private LoaiXeEntity loaiXeEntity;
+
+//    public LoaiXeEntity getLoaiXeEntity() {
+//        return loaiXeEntity;
+//    }
+//
+//    public void setLoaiXeEntity(LoaiXeEntity loaiXeEntity) {
+//        this.loaiXeEntity = loaiXeEntity;
+//    }
 
     public ChuXeEntity() {
     }
 
-    public ChuXeEntity(String hoTenChuXe, String diaChi, String soDT, String bienSoXe, int maHTX) {
+    public ChuXeEntity(String hoTenChuXe, String diaChi, String soDT, String bienSoXe, Integer maHTX) {
         this.hoTenChuXe = hoTenChuXe;
         this.diaChi = diaChi;
         this.soDT = soDT;
@@ -44,11 +54,11 @@ public class ChuXeEntity {
         this.maHTX = maHTX;
     }
 
-    public int getMaChuXe() {
+    public Integer getMaChuXe() {
         return maChuXe;
     }
 
-    public void setMaChuXe(int maChuXe) {
+    public void setMaChuXe(Integer maChuXe) {
         this.maChuXe = maChuXe;
     }
 
@@ -84,11 +94,11 @@ public class ChuXeEntity {
         this.bienSoXe = bienSoXe;
     }
 
-    public int getMaHTX() {
+    public Integer getMaHTX() {
         return maHTX;
     }
 
-    public void setMaHTX(int maHTX) {
+    public void setMaHTX(Integer maHTX) {
         this.maHTX = maHTX;
     }
 }

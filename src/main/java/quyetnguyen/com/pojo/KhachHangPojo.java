@@ -1,24 +1,24 @@
 package quyetnguyen.com.pojo;
 
 public class KhachHangPojo {
-    private int maKhachHang;
+    private Integer maKhachHang;
     private String hoTenKH;
     private String soDT;
 
     public KhachHangPojo() {
     }
 
-    public KhachHangPojo(int maKhachHang, String hoTenKH, String soDT) {
+    public KhachHangPojo(Integer maKhachHang, String hoTenKH, String soDT) {
         this.maKhachHang = maKhachHang;
         this.hoTenKH = hoTenKH;
         this.soDT = soDT;
     }
 
-    public int getMaKhachHang() {
+    public Integer getMaKhachHang() {
         return maKhachHang;
     }
 
-    public void setMaKhachHang(int maKhachHang) {
+    public void setMaKhachHang(Integer maKhachHang) {
         this.maKhachHang = maKhachHang;
     }
 

@@ -11,7 +11,7 @@ import quyetnguyen.com.entity.ChuXeEntity;
 import javax.transaction.Transactional;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/chuxe")
 public class ChuXeController {
     @Autowired
     SessionFactory sessionFactory;
@@ -20,6 +20,10 @@ public class ChuXeController {
     public String getChuXe(){
         Session session = sessionFactory.getCurrentSession().getSession();
         ChuXeEntity chuXeEntity = session.get(ChuXeEntity.class,1);
+        chuXeEntity.setDiaChi("nam cao");
+        session.update(chuXeEntity);
+        ChuXeEntity chuXeEntity1 = session.get(ChuXeEntity.class,2);
+        session.delete(chuXeEntity1);
         return "trangchu";
     }
 }

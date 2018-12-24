@@ -3,30 +3,30 @@ package quyetnguyen.com.entity;
 import javax.persistence.*;
 
 @Entity
-@Table
+@Table(name = "hoptacxa")
 public class HopTacXaEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "mahtx")
-    private int maHTX;
+    private Integer maHTX;
     @Column(name = "tenhtx")
     private String tenHTX;
-    @Column(name = "diachi")
-    private String diaChi;
+    @Column(name = "diachia")
+    private String diaChia;
 
     public HopTacXaEntity() {
     }
 
     public HopTacXaEntity(String tenHTX, String diaChi) {
         this.tenHTX = tenHTX;
-        this.diaChi = diaChi;
+        this.diaChia = diaChi;
     }
 
-    public int getMaHTX() {
+    public Integer getMaHTX() {
         return maHTX;
     }
 
-    public void setMaHTX(int maHTX) {
+    public void setMaHTX(Integer maHTX) {
         this.maHTX = maHTX;
     }
 
@@ -39,10 +39,10 @@ public class HopTacXaEntity {
     }
 
     public String getDiaChi() {
-        return diaChi;
+        return diaChia;
     }
 
     public void setDiaChi(String diaChi) {
-        this.diaChi = diaChi;
+        this.diaChia = diaChi;
     }
 }

@@ -1,18 +1,18 @@
 package quyetnguyen.com.pojo;
 
 public class GiaoDichPojo {
-    private int maChuXe;
-    private int maKhachHang;
+    private Integer maChuXe;
+    private Integer maKhachHang;
     private String thoiGianGiaoDich;
     private String diemDonKhach;
     private String diemTraKhach;
-    private int maKhuyenMai;
+    private Integer maKhuyenMai;
     private String soTienGiaoDichThucTe;
 
     public GiaoDichPojo() {
     }
 
-    public GiaoDichPojo(int maChuXe, int maKhachHang, String thoiGianGiaoDich, String diemDonKhach, String diemTraKhach, int maKhuyenMai, String soTienGiaoDichThucTe) {
+    public GiaoDichPojo(Integer maChuXe, Integer maKhachHang, String thoiGianGiaoDich, String diemDonKhach, String diemTraKhach, Integer maKhuyenMai, String soTienGiaoDichThucTe) {
         this.maChuXe = maChuXe;
         this.maKhachHang = maKhachHang;
         this.thoiGianGiaoDich = thoiGianGiaoDich;
@@ -22,19 +22,19 @@ public class GiaoDichPojo {
         this.soTienGiaoDichThucTe = soTienGiaoDichThucTe;
     }
 
-    public int getMaChuXe() {
+    public Integer getMaChuXe() {
         return maChuXe;
     }
 
-    public void setMaChuXe(int maChuXe) {
+    public void setMaChuXe(Integer maChuXe) {
         this.maChuXe = maChuXe;
     }
 
-    public int getMaKhachHang() {
+    public Integer getMaKhachHang() {
         return maKhachHang;
     }
 
-    public void setMaKhachHang(int maKhachHang) {
+    public void setMaKhachHang(Integer maKhachHang) {
         this.maKhachHang = maKhachHang;
     }
 
@@ -62,11 +62,11 @@ public class GiaoDichPojo {
         this.diemTraKhach = diemTraKhach;
     }
 
-    public int getMaKhuyenMai() {
+    public Integer getMaKhuyenMai() {
         return maKhuyenMai;
     }
 
-    public void setMaKhuyenMai(int maKhuyenMai) {
+    public void setMaKhuyenMai(Integer maKhuyenMai) {
         this.maKhuyenMai = maKhuyenMai;
     }
 

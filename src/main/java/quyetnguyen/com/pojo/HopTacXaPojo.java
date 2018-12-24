@@ -1,24 +1,24 @@
 package quyetnguyen.com.pojo;
 
 public class HopTacXaPojo {
-    private int maHTX;
+    private Integer maHTX;
     private String tenHTX;
     private String diaChi;
 
     public HopTacXaPojo() {
     }
 
-    public HopTacXaPojo(int maHTX, String tenHTX, String diaChi) {
+    public HopTacXaPojo(Integer maHTX, String tenHTX, String diaChi) {
         this.maHTX = maHTX;
         this.tenHTX = tenHTX;
         this.diaChi = diaChi;
     }
 
-    public int getMaHTX() {
+    public Integer getMaHTX() {
         return maHTX;
     }
 
-    public void setMaHTX(int maHTX) {
+    public void setMaHTX(Integer maHTX) {
         this.maHTX = maHTX;
     }
 

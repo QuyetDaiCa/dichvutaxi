@@ -13,16 +13,16 @@ public class LoaiXeEntity {
     private Integer maLoaiXe;
     @Column(name = "motaloaixe")
     private String moTaLoaiXe;
-    @OneToMany(mappedBy = "ChuXeEntity",cascade = CascadeType.ALL)
-    private Set<ChuXeEntity>  chuXeEntities = new HashSet<>();
-
-    public Set<ChuXeEntity> getChuXeEntities() {
-        return chuXeEntities;
-    }
-
-    public void setChuXeEntities(Set<ChuXeEntity> chuXeEntities) {
-        this.chuXeEntities = chuXeEntities;
-    }
+//    @OneToMany(mappedBy = "ChuXeEntity",cascade = CascadeType.ALL)
+//    private Set<ChuXeEntity>  chuXeEntities = new HashSet<>();
+//
+//    public Set<ChuXeEntity> getChuXeEntities() {
+//        return chuXeEntities;
+//    }
+//
+//    public void setChuXeEntities(Set<ChuXeEntity> chuXeEntities) {
+//        this.chuXeEntities = chuXeEntities;
+//    }
 
     public LoaiXeEntity() {
     }
